@@ -1,0 +1,109 @@
+html,body{
+    padding: 10px 2px 0px 2px;
+    margin: 0;
+}
+
+.gallerycontainer{
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 3px 1px activecaption;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.gallerycontainer .slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: scrollbar;
+    position: relative;
+}
+.gallerycontainer .slideShowContainer .imageHolder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.gallerycontainer .slideShowContainer .imageHolder img {
+    width: 100%;
+    height: 100%
+}
+
+.gallerycontainer .slideShowContainer .leftArrow,.gallerycontainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background-color: #000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.gallerycontainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+
+
+.gallerycontainer .slideShowContainer .rightArrow:hover{
+    background-color: #0000a8;
+    cursor: pointer;
+}
+.gallerycontainer .slideShowContainer .leftArrow:hover{
+    background-color: #0000a8;
+        cursor: pointer;
+
+}
+
+.gallerycontainer .slideShowContainer .arrow{
+      display: inline-block;
+    border:3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  
+}
+
+.gallerycontainer .slideShowContainer  .arrow.arrowLeft{
+  transform: rotate(-135deg);
+}
+.gallerycontainer .slideShowContainer .arrow.arrowRight{
+  transform: rotateZ(20deg);
+}
+
+.gallerycontainer .play{
+    max-width:  50px;
+    max-height:  50px;
+     left: 10;
+      bottom: -10;
+    position: relative;
+    
+}
+
+.gallerycontainer .play:hover{
+    background-color: #ff3366;
+    width:  35px;
+    height: 35px;
+}
+
+
+
+
